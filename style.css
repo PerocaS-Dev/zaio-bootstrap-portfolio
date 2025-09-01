@@ -74,3 +74,23 @@ body {
   opacity: 80%;
   transition: all 0.5s;
 }
+
+.card-img-top,
+.img-container video {
+  height: 200px; /* uniform height for all media */
+  object-fit: cover; /* crop instead of stretch */
+  width: 100%; /* ensure full width */
+}
+
+.card {
+  height: 100%; /* make all cards same height */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1; /* equalize content area */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
